@@ -8,7 +8,6 @@ fs.readdir(styleslFolder, { withFileTypes: true }, (err, filesArray) => {
   filesArray.forEach((file) => {
     if (file.isFile() && path.extname(file.name) === '.css') {
       const stylePath = path.join(styleslFolder, file.name);
-      console.log(stylePath);
       const stream = fs.createReadStream(stylePath, 'utf-8');
       stream.on('data', (text) => {
         bundle.write(text);
