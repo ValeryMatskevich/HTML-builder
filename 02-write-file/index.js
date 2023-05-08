@@ -10,4 +10,4 @@ stdin.on('data', (text) => {
 });
 
 process.on('SIGINT', () => process.exit());
-process.on('exit', () => console.log('Текст добавлен в файл'));
+process.on('exit', () => console.log('Текст добавлен в файл. Хорошего дня'));
