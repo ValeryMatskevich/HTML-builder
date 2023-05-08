@@ -1,4 +1,3 @@
-const { stdout, stdin, exit } = process;
 const fs = require('fs');
 const path = require('path');
 const folderPath = path.join(__dirname, 'secret-folder');
